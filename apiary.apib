@@ -4,8 +4,20 @@ HOST: http://app.kartero.me
 # kartero
 Kartero is a *deliverability optimization* service.
 
+# Group Profile
+Profile-related resources
+
+## Profile [/profile]
+### Retrieve profile [GET]
++ Response 200 (application/hal+json)
+
+        {
+            "name":"name",
+            "test":"test"
+        }
+
 # Group Mail
-Mail-related resources of the **Kartero API**
+Mail-related resources
 
 ## Mail [/mail]
 ### Send mail [POST]
@@ -15,6 +27,24 @@ Mail-related resources of the **Kartero API**
 
 + Response 200 (application/hal+json)
 
+# Group List Management
+## List [/lists]
+### Create new list [POST]
++ Request (application/json)
+
+        {}
+
++ Response 201 (application/hal+json)
+
+## List [/lists/{id}]
+### Retrieve a list [GET]
++ Response 200 (application/hal+json)
+
+### Delete a list [DELETE]
++ Response 204
+
+# Group Event Management
+## 
 
 ## Notes Collection [/notes]
 ### List all Notes [GET]
